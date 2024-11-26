@@ -1,3 +1,7 @@
 import express, { Express } from "express";
+import "dotenv/config";
+import "./dbs/init.mongodb";
 
-export const app: Express = express();
+const app: Express = express();
+
+export { app };
