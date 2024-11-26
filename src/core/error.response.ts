@@ -1,10 +1,9 @@
-
 const StatusCode = {
   FORBIDDEN: 403,
   CONFLICT: 409,
 } as const;
 
-type StatusCodeType = (typeof StatusCode)[keyof typeof StatusCode]; 
+type StatusCodeType = (typeof StatusCode)[keyof typeof StatusCode];
 
 const ReasonStatusCode = {
   FORBIDDEN: "Bad Request Error",
